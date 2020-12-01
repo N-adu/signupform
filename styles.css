@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ADA38C;
+}
+.container {
+    width: 50vw;
+    display: flex; 
+    background-color: tan;
+    color: #fff;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+img {
+    width: 50%;
+}
+.form-container {
+    margin: 1rem;
+}
+.form-container h2 {
+    margin: 0 5px 25px;
+    font-size: 28px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #A6774E;
+    letter-spacing: 2px;
+}
+.form-container button {
+    padding: 10px 18px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 20px;
+    background: #f0e6d1;
+    color: #A6774E;
+    border: 2px solid #A6774E;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.form-container button:hover {
+    cursor: pointer;
+
+}
+.form-container button:focus {
+    outline: none;
+    
+}
+.form-container button:active {
+    background-color: #A6774E;
+    color: #f0e6d1;
+}
+form {
+    margin-left: 8px;
+    padding: 20px 20px;
+}
+.form-control {
+    width: 250px;
+    margin-bottom: 10px;
+    padding-bottom: 18px;
+    position: relative;
+    
+}
+.form-control label {
+    margin-bottom: 1px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: block;
+}
+.form-control input {
+    font-size: 14px;
+    padding: 8px 0 5px 4px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #A6774E;
+    display: block;
+    background: transparent;
+    color: #fff;
+    transition: 0.5s;
+}
+input:-internal-autofill-selected {
+    background-color: tan !important;
+    background-image: none !important;
+}
+
+::-webkit-input-placeholder {
+    color: fff;
+}
+.form-control input:focus {
+    outline: 0;
+    border-color: #fff;
+    
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #D2B48C inset !important;
+    
+}
+
+.form-control.success input {
+    border: none;
+    border-bottom: 2px solid rgb(16, 201, 16);
+}
+.form-control.error input {
+    border: none;
+    border-bottom: 2px solid red;
+}
+.form-control small {
+    margin-top: 40px;
+    font-size: 11px;
+    color: red;
+    bottom: 0;
+   position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+.form-control.error small {
+    visibility: visible;
+}
