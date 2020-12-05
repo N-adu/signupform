@@ -125,3 +125,36 @@ input:-webkit-autofill:active  {
 .form-control.error small {
     visibility: visible;
 }
+
+@media screen and (max-width: 830px) {
+    .container {
+        width: 75%;
+    }
+    img {
+        width: 40%;
+    }
+    form {
+        padding-left: 10px;
+    }
+    .form-container button {
+        width: 100%;
+    }
+   
+    .form-control {
+        width: 80%;
+          
+    }
+    .form-control input {
+        font-size: 13px;
+        padding: 5px 2px 2px 4px;
+        width: 30vw;
+        
+    }
+    .form-control small {
+        margin-top: 40px;
+        font-size: 10px;
+        font-weight: 500;
+        top: 17px;
+    }
+}
+
